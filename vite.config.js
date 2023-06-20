@@ -8,5 +8,9 @@ export default defineConfig({
       name: 'vision-ui',
       fileName: (format) => `vision-ui.${format}.js`
     }
-  }
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+  },
 });

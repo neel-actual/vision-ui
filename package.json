@@ -5,18 +5,26 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "lit": "^2.7.2"
   },
   "devDependencies": {
+    "@vitest/ui": "^0.32.2",
+    "jsdom": "^22.1.0",
     "typescript": "^5.0.2",
-    "vite": "^4.3.9"
+    "vite": "^4.3.9",
+    "vitest": "^0.32.2"
   },
-  "files":["dist"],
-  "main":"./dist/vision-ui.umd.js",
-  "module":"./dist/vision-ui.es.js",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vision-ui.umd.js",
+  "module": "./dist/vision-ui.es.js",
   "exports": {
     ".": {
       "import": "./dist/vision-ui.es.js",
