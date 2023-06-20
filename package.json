@@ -1,0 +1,26 @@
+{
+  "name": "vision-ui",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lit": "^2.7.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9"
+  },
+  "files":["dist"],
+  "main":"./dist/vision-ui.umd.js",
+  "module":"./dist/vision-ui.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vision-ui.es.js",
+      "require": "./dist/vision-ui.umd.js"
+    }
+  }
+}
